@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useEffect, useCallback } from "react";
+const { useState, useMemo, useRef, useEffect, useCallback } = React;
 
 // 2026 Discovery Health Rate Constants
 const RCF_AN = 283.856;
@@ -90,7 +90,7 @@ function modRate(mod, plan) {
   return mod.u * cU(plan);
 }
 
-export default function App() {
+function App() {
   const [plan, setPlan] = useState(PLANS[0]);
   const [proc, setProc] = useState(null);
   const [q, setQ] = useState("");
